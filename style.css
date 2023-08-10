@@ -1,0 +1,278 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: url("./background.jpg");
+  background-size: cover;
+  cursor: auto;
+}
+
+button {
+  background-color: red;
+  color: white;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid #333;
+  transition: 0.3s ease;
+}
+
+#board {
+  margin: auto;
+  width: 550px;
+  height: 250px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background: url("./water.gif");
+  background-size: cover;
+  border: 8px solid gray;
+  border-radius: 25px;
+  cursor: url("./tangan1.png") !important;
+}
+
+#board:active {
+  cursor: url("./tangan2.png") !important;
+}
+
+.head {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 120px;
+  padding-top: 10px;
+  background-color: red;
+  width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  color: white;
+  line-height: 0.1rem;
+  font-size: 10px;
+}
+
+#board div {
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  background-image: url("./tumbuhan.gif");
+  background-size: cover;
+}
+
+#board div img {
+  width: 70px;
+  height: 70px;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+@media screen and (max-width: 1408px) {
+  body {
+    background-size: 1408px 640px;
+  }
+
+  #board {
+    width: 650px;
+    height: 300px;
+  }
+
+  #board div {
+    width: 90px;
+    height: 90px;
+  }
+
+  #board div img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: 1200px 640px;
+  }
+
+  #board {
+    width: 550px;
+    height: 320px;
+  }
+
+  #board div {
+    width: 80px;
+    height: 80px;
+  }
+
+  #board div img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-size: 1024px 640px;
+  }
+
+  #board {
+    width: 550px;
+    height: 320px;
+  }
+
+  #board div {
+    width: 90px;
+    height: 90px;
+  }
+
+  #board div img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    background-size: 960px 640px;
+  }
+
+  #board {
+    width: 500px;
+    height: 300px;
+  }
+
+  #board div {
+    width: 80px;
+    height: 80px;
+  }
+
+  #board div img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    background-size: 750px 640px;
+  }
+
+  #board {
+    width: 500px;
+    height: 300px;
+  }
+
+  #board div {
+    width: 70px;
+    height: 70px;
+  }
+
+  #board div img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  body {
+    background-size: 560px 640px;
+  }
+
+  button {
+    width: 80px;
+    height: 40px;
+  }
+
+  .head {
+    width: 180px;
+    height: 60px;
+    font-size: 10px;
+  }
+
+  #board {
+    width: 350px;
+    height: 300px;
+  }
+
+  #board div {
+    width: 60px;
+    height: 60px;
+  }
+
+  #board div img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  body {
+    background-size: 370px 640px;
+  }
+
+  button {
+    width: 60px;
+    height: 30px;
+  }
+
+  .head {
+    width: 150px;
+    height: 50px;
+    font-size: 8px;
+  }
+
+  #board {
+    width: 180px;
+    height: 320px;
+  }
+
+  #board div {
+    width: 40px;
+    height: 40px;
+  }
+
+  #board div img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  body {
+    background-size: 250px 640px;
+  }
+
+  button {
+    width: 60px;
+    height: 30px;
+  }
+
+  .head {
+    width: 150px;
+    height: 50px;
+    font-size: 8px;
+  }
+
+  #board {
+    width: 160px;
+    height: 320px;
+  }
+
+  #board div {
+    width: 30px;
+    height: 30px;
+  }
+
+  #board div img {
+    width: 30px;
+    height: 30px;
+  }
+}
