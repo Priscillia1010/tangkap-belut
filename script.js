@@ -1,9 +1,13 @@
-let belutList;
-let kembungList;
-let score = 0;
-let gameOver = false;
+// let belutList;
+// let kembungList;
+// let score = 0;
+// let gameOver = false;
 
 function startGame() {
+  let belutList;
+  let kembungList;
+  let score = 0;
+  let gameOver = false;
   function setGame() {
     for (let i = 0; i < 10; i++) {
       let tile = document.createElement("div");
@@ -62,10 +66,26 @@ function startGame() {
       return;
     }
     if (this == belutList) {
+      function kena() {
+        var menang = new Audio("./kena.mp4");
+        menang.play();
+      }
+
+      kena();
       score += 1;
       document.getElementById("score").innerText =
         "Score : " + score.toString();
     } else if (this == kembungList) {
+      function bunyi() {
+        var kalah = new Audio("./kalah.mp4");
+        kalah.play();
+      }
+
+      bunyi();
+      const suara = document.querySelector("#backsound");
+      suara.pause();
+      suara.currentTime = 0;
+
       document.getElementById("score").innerText =
         "Game Over : " + score.toString();
       gameOver = true;
