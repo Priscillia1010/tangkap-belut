@@ -1,13 +1,9 @@
-// let belutList;
-// let kembungList;
-// let score = 0;
-// let gameOver = false;
-
 function startGame() {
   let belutList;
   let kembungList;
   let score = 0;
   let gameOver = false;
+
   function setGame() {
     for (let i = 0; i < 10; i++) {
       let tile = document.createElement("div");
@@ -91,6 +87,12 @@ function startGame() {
       gameOver = true;
     }
   }
+  const startButton = document.getElementById("startButton");
+  const gameContainer = document.getElementById("board");
+  function resetGame() {
+    gameContainer.innerHTML = "";
+  }
+  startButton.addEventListener("click", resetGame);
   setGame();
 }
 startGame();

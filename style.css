@@ -36,11 +36,11 @@ button:hover {
   background-size: cover;
   border: 8px solid gray;
   border-radius: 25px;
-  cursor: url("./tangan1.png") !important;
+  cursor: url("./gambar-cursor/tangan1.png"), auto;
 }
 
 #board:active {
-  cursor: url("./tangan2.png") !important;
+  cursor: url("./gambar-cursor/tangan2.png"), auto;
 }
 
 .head {
