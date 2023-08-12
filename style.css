@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  background: url("./background.jpg");
+  background: url("./asset/background.jpg");
   background-size: cover;
   cursor: auto;
 }
@@ -32,7 +32,7 @@ button:hover {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  background: url("./water.gif");
+  background: url("./asset/water.gif");
   background-size: cover;
   border: 8px solid gray;
   border-radius: 25px;
@@ -61,7 +61,7 @@ button:hover {
   width: 90px;
   height: 90px;
   margin: 10px;
-  background-image: url("./tumbuhan.gif");
+  background-image: url("./asset/tumbuhan.gif");
   background-size: cover;
 }
 

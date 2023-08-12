@@ -29,7 +29,7 @@ function startGame() {
     }
 
     let belut = document.createElement("img");
-    belut.src = "./belut.gif";
+    belut.src = "./asset/belut.gif";
 
     let num = getRandomList();
     if (kembungList && kembungList.id == num) {
@@ -47,7 +47,7 @@ function startGame() {
       kembungList.innerHTML = "";
     }
     let kembung = document.createElement("img");
-    kembung.src = "./kembung.webp";
+    kembung.src = "./asset/kembung.webp";
 
     let num = getRandomList();
     if (belutList && belutList.id == num) {
@@ -63,7 +63,7 @@ function startGame() {
     }
     if (this == belutList) {
       function kena() {
-        var menang = new Audio("./kena.mp4");
+        var menang = new Audio("./asset/kena.mp4");
         menang.play();
       }
 
@@ -73,7 +73,7 @@ function startGame() {
         "Score : " + score.toString();
     } else if (this == kembungList) {
       function bunyi() {
-        var kalah = new Audio("./kalah.mp4");
+        var kalah = new Audio("./asset/kalah.mp4");
         kalah.play();
       }
 
