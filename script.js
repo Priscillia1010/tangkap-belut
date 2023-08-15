@@ -91,8 +91,13 @@ function startGame() {
   const gameContainer = document.getElementById("board");
   function resetGame() {
     gameContainer.innerHTML = "";
+    belutList = null;
+    kembungList = null;
+    gameOver = false;
+    score = 0;
   }
   startButton.addEventListener("click", resetGame);
   setGame();
 }
+
 startGame();
